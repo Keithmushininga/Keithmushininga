@@ -19,8 +19,8 @@ kagglehub.login()
 # NOTEBOOK.
 
 tanyamushininga_trackrad101_path = kagglehub.dataset_download('tanyamushininga/trackrad101')
-tanyamushininga_clean_trackrad_path = kagglehub.dataset_download('tanyamushininga/clean-trackrad')
-tanyamushininga_4dxcat_path = kagglehub.dataset_download('tanyamushininga/4dxcat')
+# tanyamushininga_clean_trackrad_path = kagglehub.dataset_download('tanyamushininga/clean-trackrad')
+# tanyamushininga_4dxcat_path = kagglehub.dataset_download('tanyamushininga/4dxcat')
 
 print('Data source import complete.')
 
