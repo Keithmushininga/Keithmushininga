@@ -1,0 +1,20 @@
+# Python >= 3.10 recommended.
+#
+# These are the libraries imported by trackrad2025_bayes.py. Versions are
+# lower bounds known to expose the APIs used (NumPy 2.x is fine). For the
+# archived release, freeze your *actual* environment instead:
+#     pip freeze > requirements-lock.txt
+# and cite requirements-lock.txt as the reproducible record.
+
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10          # scipy.stats.chi2, scipy.ndimage.binary_fill_holes
+matplotlib>=3.7
+scikit-learn>=1.3    # sklearn.metrics: roc_auc_score, average_precision_score
+SimpleITK>=2.3       # reads .mha frames/labels
+kagglehub>=0.3       # downloads the Kaggle datasets (see README)
+
+# PyTorch powers the GPU Horn-Schunck solve (Branch 1). CPU works but is slow.
+# Install the build that matches your CUDA/CPU from https://pytorch.org ;
+# the line below is the generic CPU/Linux wheel.
+torch>=2.1
